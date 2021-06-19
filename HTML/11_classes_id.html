@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Classes and IDs</title>
+        <style>
+            {% comment %} /* for classes, we use .classname */ {% endcomment %}
+            .heading1{
+                color:red;
+            }
+            .heading2{
+                color:green;
+            }
+            {% comment %} /* for ids, we use #idname */ {% endcomment %}
+            #lines{
+                color:greenyellow;
+            }
+            {% comment %} /* According to the convention, you can repeat classes but id must be unique */ {% endcomment %}
+        </style>
+    </head>
+    <body>
+
+        <h2 class='heading1'>This is first Heading</h2>
+        <p id='lines'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem delectus nisi labore praesentium ipsa? Id a, aspernatur facilis accusantium possimus consequatur deserunt inventore nostrum nobis libero voluptates, quibusdam nesciunt maiores animi quam porro quidem dicta. Tempora a veritatis quam rem.</p>
+        
+        <h2 class='heading2'>This is second Heading</h2>
+        <p class='heading1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores pariatur odit corrupti amet cumque sed commodi vel quis assumenda?</p>
+
+        
+    </body>
+</html>

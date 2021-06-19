@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up Form</title>
+    </head>
+    <body>
+
+        <h1> Sign up details </h1>
+        <form>
+
+            <input type="text" placeholder="First Name">
+            <br> <br>
+
+            <input type="text" placeholder="Last Name">
+            <br> <br>
+
+            <input type="email" name="email" id="email" placeholder="Email">
+            <br> <br>
+
+            <input type="password" name="password" id="password" placeholder="Password">
+            <br>
+
+            <p>Select your Gender:</p>
+            <label for="gender-male">Male</label>
+            <input type="radio" name="gender" id="gender-male" value="male">
+
+            <label for="gender-female">Female</label>
+            <input type="radio" name="gender" id="gender-female" value="female">
+
+            <label for="gender-other">Other</label>
+            <input type="radio" name="gender" id="gender-other" value="other">
+            <br> <br>
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Afghanistan">Afghanistan</option>
+            </select>
+            <br> <br>
+
+            <p>Write about yourself:</p>
+            <textarea name="intro" id="intro" cols="30" rows="10" placeholder="type here"></textarea>
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>
