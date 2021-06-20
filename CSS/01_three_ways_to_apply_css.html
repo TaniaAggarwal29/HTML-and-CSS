@@ -1,0 +1,27 @@
+<!-- 
+1. Inline : write the style inside the tag itself
+2. Use style tag inside the head (This is better than Inline style)
+3. Code all the styles in Different css file and link that file to your html file (This is best of all 3)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="01_style.css"> <!-- Method 3 -->
+    <title>Different ways to apply css</title>
+    <!-- Method 2 -->
+    <style> 
+        h2{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red;">Heading 1</h1>  <!-- Method 1 -->
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+</body>
+</html>
