@@ -1,0 +1,42 @@
+/* Universal Selector : It applies the given style on all the html elements on our page
+*{
+    color: blue;
+}
+
+*/
+
+header{
+    background-color: #f0ebeb;
+}
+
+/* To pick the section whose class is my-articles */
+section.my-articles{
+    background-color: #f2a9a9;
+}
+
+/* To apply a style to all the p tags 
+p{
+    color: red;
+} */
+
+/* To apply some style on all the p tags INSIDE the header tag */
+/* also called descendent selector */
+header p{
+    color: red;
+}
+
+/* To change the style of all the h2 tags INSIDE the section whose class is my-articles */
+/* section.my-articles h2{
+    color: green;
+} */
+
+/* To change onlt the style of those h2 tags which are DIRECT CHILD of section tag (and not inside some other tag ibside the section) */
+section.my-articles > h2{
+    color: purple;
+}
+
+/* Adjacent selector */
+/* To change the color of all the p tags that are adjacent to h2 tag (i.e., comes directly after h2) */
+h2+p{
+    color: white;
+}
