@@ -1,0 +1,38 @@
+/* To apply a style on those 'input' tags which have 'type' attribute with value "text" */
+input[type = "text"] {
+    color: red;
+    background-color: aliceblue;
+}
+
+
+/* To change the style of 'input' tag which have 'type' attribute with value "passowrd" */
+input[type = "password"] {
+    background-color: pink;
+}
+
+
+/* To change the style of tags which have some particular string contained inside the value of some attribute.
+For eg., 
+To change the font color of all those a tags which have "google" inside their href attribute */
+
+/* a[href *= "google"] {
+    color: red;
+} */
+
+
+/* To change style of tags which have value of some attribute starting with some particular string
+for eg., 
+To change the font color of all those a tags whose href starts with 'https' */
+/* a[href ^= "https"] {
+    color: red;
+} */
+
+
+/* To change style of tags which have value of some attribute ending with some particular string
+for eg., 
+To change the font color of all those a tags whose href ends with 'https' */
+a[href $= ".com"] {
+    color: red;
+}
+
+
