@@ -1,0 +1,22 @@
+h1 {
+    color: green;
+}
+
+/* This will overwrite previous style bcz class selector has higher specificity than attribute selector */
+.h1class {
+    color: red !important;
+}
+
+/* This will overwrite previous style bcz id selector has higher specificity than class selector */
+#h1id {
+    color: blue;
+}
+
+/* Inline style will overwrite attribute, class as well as id selector */
+
+/* Therefore, The order of specificity (higher to lower) is:
+inline style attribute > id selector > class selector > attribute selector
+*/
+
+/* To make some style with lesser specificity take effect over the one with higher specifity, append !important to it.
+Though this is not a good practise */
