@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
+/* we can change the INLINE <-> BLOCK LEVEL with each other using display property */
+
+/* BLOCK LEVEL ELEMENTS */
+
+h1, h2{
+    border: 2px solid #444;
+    width: 500px;
+    /* height: 100px; */
+    /* display: inline; this will now act as inline elements */
+}
+
+/* h1{
+    margin: 40px;
+    padding: 50px;
+} */
+
+/* INLINE ELEMENTS */
+
+a{
+    border: 2px solid #555;
+    /* adding height or width won't change anything */
+
+    margin: 40px;
+    /* There's no top and bottom margin. Only left and right margin */
+
+    /* padding: 50px; */
+    /* padding can be added but the top and bottom padding will mess up the borders and will overflow. Therefore, it must never be used. */
+    padding: 0 50px;
+
+}
+
+/* IMAGE TAG */
+/* image is an inline tag too, but unlike other inline tags, we can change it's width/height */
+
+img{
+    width: 300px; /* we can give one of the two, height or width, and it will automatically adjust the other */
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+/* INLINE-BLOCK ELEMENTS */
+/* 
+There are a few problems with inline elements like:
+1. Margin can be added to left and right only. No top or bottom margin.
+2. padding can be added but top and bottom padding will mess up things.
+3. height, width cannot be controlled.
+4. To add margin, padding, etc. these can be changed to block level elements but that will bring them in next line and make them take up the whole space
+
+This problem can be solved by using the 'display' property and changing them to inline-block elements.
+
+    display: inline-block;
+
+Now the elements will still look like inline elements (in same line taking up the required space only)
+but now we can add width, height, padding, margin, etc.
+*/
