@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box1, .box2{
+    border: 2px solid #444;
+    padding: 10px;
+}
+
+.box1{
+    margin-bottom: 40px;
+}
+
+.box2{
+    margin-top: 50px;
+}
+
+
+/* Here the margins of box1 and box2 WILL NOT add up to give total margin of 90 px.
+   Instead, the top margin and the right margin will just collapse on each other
+   giving the total margin = max(40px, 50px) = 50px */
