@@ -1,0 +1,37 @@
+/* Inside the body tag, change the style of all the tags except for p tag */
+/* Mentioning 'Inside the body tag' is mandatory here, because otherwise it will apply the given style on all the elements which are not p. This includes body tag as well. Therefore, the same style will be applied to body tag.
+Now, since the p tag inherits body tag, the style will get applied to p tag as well. */
+
+/* body :not(p){
+    color: blue;
+    background: #ddd;
+} */
+
+/* body :not(.p1){
+    color: blue;
+    background: #ddd;
+} */
+
+
+/* To apply style on div tags which are empty */
+/* div:empty{
+    background-color: aliceblue;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+} */
+
+
+/* it will select the root element, i.e., html */
+:root{
+    background: #222;
+    color: #eee;
+}
+
+/* It is same as writing
+html{
+    background: #222;
+    color: #eee;
+}
+except that specificity of :root is more than html.
+ */
