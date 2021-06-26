@@ -1,0 +1,59 @@
+
+/* changes the color of all those p tags which are the first child of their parent tag. */
+/* p:first-child{
+    color: red;
+} */
+
+
+/* changes the color of all the first p tags amongst their sibling tags. (i.e., first p child of its parent tag) */
+/* p:first-of-type{
+    color: blue;
+} */
+
+
+/* changes the color of all those p tags which are the last child of their parent tag. */
+/* p:last-child{
+    color: rgb(252, 7, 252);
+} */
+
+
+/* changes the color of all the last p tags amongst their sibling tags(i.e., last p child of its parent tag) */
+/* p:first-of-type{
+    color: rgb(65, 247, 29);
+} */
+
+
+/* changes the color of all those p tags which are the 2nd child of their parent tag. */
+/* p:nth-child(2){
+    color: red;
+} */
+
+
+/* changes the color of all those p tags which are the 2nd, 4th, 6th,... child of their parent tag. */
+/* p:nth-child(2n){
+    color: red;
+} */
+
+
+/* changes the color of all those p tags which are the 1st, 3rd, 5th,... child of their parent tag. */
+/* p:nth-child(2n+1){
+    color: red;
+} */
+
+
+/* changes the color of all the 2nd p tags amongst their sibling p tags(i.e., 2nd p child of its parent tag) */
+/* p:nth-of-type(2){
+    color: rgb(65, 247, 29);
+} */
+
+
+/* changes the color of all the even p tags amongst their sibling p tags(i.e., even p child of its parent tag) */
+/* p:nth-of-type(2n){
+    color: rgb(65, 247, 29);
+} */
+
+
+/* changes the color of all the odd p tags amongst their sibling p tags(i.e., odd p child of its parent tag) */
+p:nth-of-type(2n+1){
+    color: rgb(65, 247, 29);
+}
