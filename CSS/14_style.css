@@ -1,0 +1,29 @@
+hr{
+    width: 500px;
+    margin-left: 0px;
+    border: 2px solid black;
+}
+
+.box1{
+    width: 500px;
+    background: lightcoral;
+    border: 10px solid red;
+    padding: 20px;
+}
+
+/* Here we can see that though the width of hr and .box1 is same, but the box1 is taking more width bcz the given width is for the content only. The border and padding are adding the extra pixels from both, left and right side.
+
+To solve this issue we can use property:
+    box-sizing: border-box;
+
+with this, it will take only the given width, padding, border, etc all included.
+*/
+
+.box2{
+    box-sizing: border-box; /* by default, it is set to content-box */
+    width: 500px;
+    background: lightcoral;
+    border: 10px solid red;
+    padding: 20px;
+    margin-bottom: 20px;
+}
