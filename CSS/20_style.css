@@ -1,0 +1,43 @@
+/* PSEUDO ELEMENTS */
+
+
+/* To apply style on first element of every p tag */
+/* p::first-letter{
+    font-size: 32px;
+} */
+
+
+/* To apply style on first line */
+/* p::first-line{
+    font-size: 32px;
+} */
+
+
+/* To change the style of selected text */
+/* p::selection{
+    background: #555;
+    color: white;
+} */
+
+
+/* To add some content before a paragraph(let's say), use ::before element
+   To add some content after a paragraph(let's say), use ::after element 
+   content is a mandatory property with after, before*/
+.para1::before{
+    display: block;
+    content: "Hello ";
+    border: 1px dotted green;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.para1::after{
+    display: block;
+    content: "Hello ";
+    border: 1px dotted green;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* This can be used only with tags which contain content.
+   These elements cannot be used with tags like img, br, input etc. */
