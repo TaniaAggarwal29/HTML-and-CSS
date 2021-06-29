@@ -1,0 +1,20 @@
+html{
+    /* chnaging the font size to 10px makes it easier to work with rem snce the calculation simplifies. */
+    font-size: 10px;
+
+    /* You can also write font size 62.5% instead of 10px
+       That would still be equivalent to 10px bcz default font-size is 16px
+       but with this, if the default size increases/decreases, our webpage will adjust automatically. */
+    font-size: 62.5%;
+}
+
+.box1{
+    font-size: 2rem;    /* 2 times the font size of root element(which is html) */
+}
+
+.text-content{
+    font-size: 3rem;
+    border: 0.5rem solid red;
+    margin: 2rem;
+    padding: 1rem;
+}
