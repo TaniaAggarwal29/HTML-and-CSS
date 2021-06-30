@@ -1,0 +1,18 @@
+/* viewport - total screen visible */
+/* vw - viewport width */
+/* vh - viewport height */
+
+h1{
+    border: 2px solid red;
+    width: 50vw;    /* 50% of total viewport width */
+    height: 50vh;    /* 50% of total viewport height */
+
+    height: 100vmax;     /* 100% of min(vw, vh) */
+}
+
+
+.box{
+    height: 100vmin;
+    width: 100vmax;
+    background: lightcoral;
+}
