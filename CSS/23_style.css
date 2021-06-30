@@ -1,0 +1,21 @@
+/* em units are alculated w.r.t. parent tag */
+/* In case of Font-size, 2em means twice the size of font size of parent element */
+/* In case of other attributes like border, padding, margin, etc.. it means twice the size of font-size of same element */
+
+h1{
+    font-size: 2em;
+    border: 2em solid black;
+}
+
+.box1{
+    font-size: 20px;
+}
+
+
+
+/* WHERE TO USE WHICH (NOT MANDATORILY, BUT CONVENTIONALLY) */
+/* 
+px (absolute units) --> thick/thin borders
+rem --> font-size
+em --> margins, paddings, etc
+*/
