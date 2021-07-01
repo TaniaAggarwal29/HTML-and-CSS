@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+.box1{
+    border: 5px solid green;
+}
+
+.heading1{
+    width: 25%;
+    background-color: aliceblue;
+    float: left;
+    padding: 20px;
+}
+
+.heading2{
+    width: 25%;
+    background-color: lightgoldenrodyellow;
+    float: left;
+    padding: 20px;
+}
+
+.heading3{
+    width: 25%;
+    background-color: lightgreen;
+    float: left;
+    padding: 20px;
+}
+
+.heading4{
+    width: 25%;
+    background-color: lightsalmon;
+    float: left;
+    padding: 20px;
+}
+
+/* After giving the floats to these four div tags, they'll come out of the css normal flow 
+and hence, they no longer will be a part of their parent tag div.box1 */
+
+/* To fix this, we can add another empty div.clearfix and then, can set its clear property to both */
+.clearfix{
+    clear: both;
+}
+
+/* Instead of this, what else we can do is: */
+.box1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
