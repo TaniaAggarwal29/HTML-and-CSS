@@ -19,4 +19,4 @@ inline style attribute > id selector > class selector > attribute selector
 */
 
 /* To make some style with lesser specificity take effect over the one with higher specifity, append !important to it.
-Though this is not a good practise */
+Though this is not a good practice */

@@ -30,7 +30,7 @@ header p{
     color: green;
 } */
 
-/* To change onlt the style of those h2 tags which are DIRECT CHILD of section tag (and not inside some other tag ibside the section) */
+/* To change only the style of those h2 tags which are DIRECT CHILD of section tag (and not inside some other tag inside the section) */
 section.my-articles > h2{
     color: purple;
 }

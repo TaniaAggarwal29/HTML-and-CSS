@@ -7,7 +7,7 @@ h1{
     width: 50vw;    /* 50% of total viewport width */
     height: 50vh;    /* 50% of total viewport height */
 
-    height: 100vmax;     /* 100% of min(vw, vh) */
+    height: 100vmin;     /* 100% of min(vw, vh) */
 }
 
 
