@@ -1,0 +1,120 @@
+
+/* 
+display: flex; makes the box-wrapper div 'flex container' and the box items becomes 'flex items'. 
+This will make all the items automatically align in a row left to right,
+*/
+
+/* 
+FLEXBOX contains two axis:
+Main axis -- left to right by default
+Cross axis -- top to bottom by default
+
+PROPERTIES OF FLEX CONTAINER:
+
+- flex-direction:
+  possible values: row(default)
+                   row-reverse (main axis - right to left)
+                   column (main axis - top to bottom)
+                   column-reverse (main axis - bottom to top)
+NOTE: Content always flow from main-axis-start to main-axis-end.
+
+- flex-wrap: 
+  possible values: 
+                   wrap (the content takes up the required or assigned width and the remaining content gets wrapped up in next line - across cross-axis)
+                   wrap-reverse (same as wrap, except that the cross axis gets reversed)
+                   nowrap (by default)
+
+- justify-content: aligns content towards main axis
+  possible values:
+                   flex-start (default, aligned towards main-axis-start)
+                   flex-end (aligned towars main-axis-end)
+                   center (content aligns at the center of main axis)
+                   space-between (adds equal space between all the boxes)
+                   space-around (adds equal space between the boxes and to the left of box1 and right of box2)
+
+  NOTE: justify-content always aligns the content towards main-axis. So if when using flex-direction as row-reverse or column or column-reverse, it will shift accordingly.
+
+- align-items: aligns items towards cross axis
+  possible values: 
+                   stretch (default, takes up the whole space across cross-axis)
+                   flex-start (aligned towards cross-axis-start)
+                   flex-end (aligned towards cross-axis-end)
+                   center (aligned at the center of cross axis)
+
+- align-content: when content spans over one row, this property is used to adjust space between those rows.
+  possible values:
+                    center (all rows at center)
+                    flex-start (all rows at cross-axis-start)
+                    flex-end (all rows at cross-axis-end)
+                    space-between (equal space between the rows)
+                    space-around (equal space between and around the rows)
+
+- flex-flow: used to write short-hand notation for flex-direction and flex-wrap.
+   e.g., flex-flow: row wrap;
+
+
+PROPERTIES OF FLEX-ITEMS: 
+
+- align-self: same as align-items but used for particular flex-items instead.
+  possible values: same as align-items -- stretch/flex-start/flex-end.. etc
+
+- order: to change the order of flex-items in which they appear. Items with smaller order appear first.
+
+- flex-basis: initial length of item towards main-axis
+              that means -- it's equivalent to width when flex-direction is row, and
+                            it's equivalent to height when flex-direction is column
+
+- flex-grow: it is integer value given to individual flex-items. The "available" space(if any) along the main axis is divided among the flex-items in the ratio of their flex-grow values.
+
+- flex-shrink: Let's say that the width of outer box, that is flex-container, is less than the total width required by the flex-items. Then these items will automatically shrink to fit in.
+We can control how much each item shrinks by flex-shrink property.
+It takes integer values. Higher the value, more will the item shrink, i.e., items give up space in ratio of their flex-shrink values.
+
+- flex: shorthand for flex-grow, flex-shrink, and flex-basis respectively.
+  e.g., flex: 1 2 400;
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper {
+    border: 5px solid black;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 500px;
+    align-items: center;
+    /* align-content: space-around; */
+    /* flex-flow: row wrap; */
+}
+
+.box {
+    border: 1px solid #666;
+    width: 400px;
+}
+
+.box-1 {
+    background: lightblue;
+    order: 0;
+}
+
+.box-2 {
+    background: lightcoral;
+    /* align-self: stretch; */
+    order: 2;
+}
+
+.box-3 {
+    background: lightcyan;
+    order: 1;
+}
+
+.box-4 {
+    background: lightgoldenrodyellow;
+}
+
+.box-5 {
+    background: lightgray;
+}
